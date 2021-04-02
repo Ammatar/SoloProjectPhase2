@@ -72,7 +72,7 @@ function create() {
   house.setCollisionByProperty({ collides: true });
   house.setCollision(collisionArray);
   house.setTileLocationCallback(17, 35, 1, 1, () => {
-    console.log('quest');
+    // console.log('quest');
     alert(charName + ' got New quest');
     house.setTileLocationCallback(17, 35, 1, 1, null);
   });
@@ -104,7 +104,7 @@ function update() {
     this.physics.world.bounds.width = map.widthInPixels;
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.add.collider(enemies, house);
-    console.log(enemyI);
+    // console.log(enemyI);
     enemyI.setCollideWorldBounds(true);
     return enemyI;
   };
@@ -161,7 +161,7 @@ function update() {
         hit.destroy();
       });
       this.physics.add.overlap(hit, enemies, (hiit, enemyInstance) => {
-        console.log('hitted', enemyInstance);
+        // console.log('hitted', enemyInstance);
         hiit.destroy();
         enemyInstance.hp -= 1;
         if (enemyInstance.hp === 0) {

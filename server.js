@@ -42,11 +42,15 @@ app.get('/game', (req, res) => {
   const sess = req.session;
   res.render('game', { sess });
 });
-app.post('/login', (req, res) => {
+app.post('/login', async (req, res) => {
   // console.log(req.body);
   // passwordField
-  req.session.username = req.body.loginField;
-  res.redirect('/charSelect');
+  const nameField = await User.findOne({ userName: req.body.loginField })
+  if (nameField && nameField.userPassword === req.body.passwordField) {
+    req.session.username = req.body.loginField;
+    return res.redirect('/charSelect');
+  }
+  return res.redirect('/');
 });
 app.get('/registration', (req, res) => {
   res.render('registration');
