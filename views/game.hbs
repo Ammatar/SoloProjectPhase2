@@ -1,0 +1,15 @@
+<script>
+const charSkin = "{{sess.char.charSkin}}"
+const charName = "{{sess.char.charName}}"
+</script>
+<div>
+  <script src="main.js"></script> 
+</div><br>
+<div class="ingameMenu">
+<a href="/charSelect"><button>Char Select</button></a>
+<a href="/exit"><button>Exit</button></a>
+{{#if sess.char}}
+<input type="text" n>
+<p>{{sess.char._id}}</p>
+{{/if}}
+</div>

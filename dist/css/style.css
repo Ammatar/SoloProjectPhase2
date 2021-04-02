@@ -1,0 +1,31 @@
+#root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#leftBar {
+
+}
+#game {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login {
+  width: 50vh;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.charCard {
+  border: 1px dotted black;
+}
+.ingameMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

@@ -1,0 +1,36 @@
+<form action="/charCreate" method="post">
+  <input type="text" name="charName" placeholder="charName">
+  <select name="charRace" id="">
+    <option value="Human">Human</option>
+  </select>
+  {{!-- <input type="text" name="charRace" id=""> --}}
+  {{!-- <input type="text" name="charGender"> --}}
+  <select name="charGender" id="">
+    <option value="M">Male</option>
+    <option value="F">Female</option>
+  </select>
+  <input type="text" name="charSkin" id="charSkin" value="img/CharSkins/Slime/static.png" style="display: none;">
+  
+  <div id="skins">
+    <img src="/img/CharSkins/Human/hat-guy.png" alt="" data-img="img/CharSkins/Human/hat-guy.png">
+    <img src="/img/CharSkins/Slime/static.png" alt="" data-img="img/CharSkins/Slime/static.png">
+  </div>
+  
+  {{!-- <input type="text" name="charClass"> --}}
+  <select name="charClassId" id="">
+    {{#each classes}}
+    <option value="{{this._id}}">{{this.charClassName}}</option>
+    {{/each}}
+  </select>
+  <button>Create</button>
+</form>
+
+<script>
+  const lsskins = document.getElementById('skins')
+  const inputSkin = document.getElementById('charSkin')
+  lsskins.addEventListener('click', (e) =>{
+    console.log(e.target)
+    inputSkin.value = e.target.dataset.img;
+    console.log(inputSkin.value)
+  })
+</script>

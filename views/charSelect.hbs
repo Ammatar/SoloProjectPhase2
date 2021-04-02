@@ -1,0 +1,23 @@
+<div class="charSelect">
+<h1>Char Select</h1>
+{{#each chars}}
+<div class="charCard">
+  <form method="POST" action="/charSelect" >
+  <div>
+  <p>{{this.charName}}</p>
+  <p>{{this.charClass.charClassName}}</p>
+  <p>{{this.charLevel}}</p>
+  </div>
+  <div>
+    <img src="{{this.charSkin}}" alt="">
+  </div>
+  <input type="text" name="id" value="{{this._id}}" style="display: none;">
+  <button >Start Game</button>
+  </form>
+</div>
+{{/each}}
+<div class="gameMenu">
+  <a href="/charCreate"><button>Create New</button></a>
+</div>
+</div>
+  
