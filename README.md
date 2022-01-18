@@ -1,7 +1,5 @@
 # SoloProjectPhase2
 
-<img width="1413" alt="Screenshot 2022-01-18 at 14 00 12" src="https://user-images.githubusercontent.com/42938122/149942391-cf08aa92-bd92-48fe-8868-3630919d6878.png">
-
 <img width="1413" alt="Screenshot 2022-01-18 at 14 00 12" src="https://user-images.githubusercontent.com/42938122/149942421-d9f13064-9b0f-4916-922e-e86066dc0ba2.png">
 
 <img width="617" alt="Screenshot 2022-01-18 at 14 00 48" src="https://user-images.githubusercontent.com/42938122/149942444-edbf6d3a-bfe0-46b1-b33d-de17568a8d1d.png">
